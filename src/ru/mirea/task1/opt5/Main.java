@@ -10,7 +10,7 @@ public class Main {
 
         for (int i = 1; i < 11; i++){
             n = 1/i;
-            System.out.print(String.format("%,.2f", (1./i)) + " ");
+            System.out.print(String.format("%,.2f", (1./i)) + "  ");
         }
 
     }
