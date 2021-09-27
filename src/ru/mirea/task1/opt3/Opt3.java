@@ -1,7 +1,7 @@
 package ru.mirea.task1.opt3;
 import java.util.Scanner;
 
-public class Main {
+public class Opt3 {
 
     static void task1(){
         int[] array = new int[10];

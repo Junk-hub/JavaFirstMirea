@@ -1,6 +1,6 @@
 package ru.mirea.task1.opt5;
 
-public class Main {
+public class Opt5 {
     public static void main(String[] args) {
         System.out.println();
         System.out.println("Первые 10 элементов гармонического ряда: ");

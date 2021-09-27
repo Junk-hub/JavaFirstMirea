@@ -2,7 +2,7 @@ package ru.mirea.task1.opt6;
 import java.util.Scanner;
 import java.util.Random;
 
-public class Main {
+public class Opt6 {
 
     //Метод, реализующий сортировку пузырьком
     public static void bubbleSort(int[] arr){

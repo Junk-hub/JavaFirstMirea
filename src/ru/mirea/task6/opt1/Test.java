@@ -1,6 +1,6 @@
 package ru.mirea.task6.opt1;
 
-public class Main {
+public class Test {
 
     public static void main(String[] args) {
         //Тест варината 1

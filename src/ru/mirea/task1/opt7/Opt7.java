@@ -1,7 +1,7 @@
 package ru.mirea.task1.opt7;
 import java.util.Scanner;
 
-public class Main {
+public class Opt7 {
 
     static void task5(){
 
