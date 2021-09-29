@@ -2,7 +2,6 @@ package ru.mirea.task8.opt1;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Scanner;
 
 public class ShowShapes extends JPanel {
 
@@ -14,7 +13,6 @@ public class ShowShapes extends JPanel {
 
         fr.add(new ShowShapes());
         fr.setResizable(false);
-
     }
 
     public void paint(Graphics g){

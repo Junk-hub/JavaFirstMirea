@@ -49,7 +49,7 @@ public class ShowAnimation extends JPanel {
                     break;
             }
             count++;
-            if (count == 5) {
+            if (count == 4) {
                 count = 0;
             }
             repaint();

@@ -1,36 +1,54 @@
 package ru.mirea.task8.opt2;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+import javax.swing.JFrame;
 import java.util.Scanner;
+import javax.swing.JPanel;
 
+public class ShowImage extends JPanel {
 
-public class ShowImage extends JPanel{
+    private static final long serialVersionUID = 1L;
 
-    public static void main(String[] args){
-        //создание окна
-        JFrame fr = new JFrame();
-        fr.setSize(500, 400);
-        fr.setVisible(true);
-        //Добавление изображения в окно
-        fr.add(new ShowImage());
-        fr.setResizable(false);
+    private BufferedImage image;
+
+    public static final int WIDTH = 1000;
+    public static final int HEIGHT = 900;
+
+    public static void main(String avg[]) throws IOException {
+        ShowImage abc = new ShowImage();
+
     }
 
-    public void paint(Graphics g, String[] args){
+    public ShowImage() {
+        try {
+            JFrame frame = new JFrame();
+            System.out.println("Введите путь к картинке");
+            Scanner in = new Scanner(System.in);
+            String path;
+            path = in.nextLine();
+            image = ImageIO.read(new File(path));
 
-        Scanner in = new Scanner(System.in);
+            frame.setSize(WIDTH, HEIGHT);
+            frame.setVisible(true);
+            frame.getContentPane().add(this);
+            this.setBackground(Color.BLACK);
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        System.out.println("Введите путь к картинке, которую необходимо отобразить на экране: ");
-        String path = in.nextLine();
-
-        //записываем изображение в переменную
-        for (int i = 0; i < args.length; i++)
-            path = args[i];
-
-        Image img = new ImageIcon(path).getImage();
-
-        //Вывод изображения
-        g.drawImage(img, 0, 0, null);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        g.drawImage(image, 0, 0, null); // see javadoc for more info on the
+        // parameters
+    }
+
 }

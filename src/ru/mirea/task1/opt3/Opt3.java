@@ -48,7 +48,7 @@ public class Opt3 {
         System.out.println("Сумма элементов массива = " + sum);
     }
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         task1();
     }
 }
