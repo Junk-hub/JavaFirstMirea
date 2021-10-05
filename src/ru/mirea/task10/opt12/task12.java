@@ -18,7 +18,7 @@ public class task12 {
     }
 
     public static void main(String[] args){
-        System.out.println("Приведите Вашу последовательность: ");
+        System.out.println("Приведите Вашу последовательность:");
         solution();
     }
 }
