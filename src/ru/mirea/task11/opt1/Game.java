@@ -1,7 +1,6 @@
 package ru.mirea.task11.opt1;
 
 import javax.swing.*;
-import javax.swing.plaf.basic.BasicSplitPaneUI;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
