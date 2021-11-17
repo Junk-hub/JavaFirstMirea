@@ -133,5 +133,4 @@
   
 
 Ниже приведена диаграмма, описывающая классы и их взаимодействие:
-
-![image-20211027161451304](C:\Users\1oran\AppData\Roaming\Typora\typora-user-images\image-20211027161451304.png)
+см. 1.jpg в папке task16.
